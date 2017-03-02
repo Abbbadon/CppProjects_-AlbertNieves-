@@ -5,7 +5,7 @@ class DynArray
 {
 public:
 	// constructors
-	DynArray(void);													// constructs the class by default
+	DynArray(void);														// constructs the class by default
 	DynArray(size_t size);												// creates the array with a defined size
 	DynArray(size_t size, const int &value);							// creates and initializes the elements of the array with a value
 	DynArray(int *arr, size_t size);									// initializes each element from an external array
@@ -17,16 +17,16 @@ public:
 	DynArray& operator= (const DynArray &x);							// copies all the attributes from x to this object
 
 																		// iterator methods
-	int* begin(void) const;											// returns an iterator to the first element
-	int* end(void) const;											// returns an iterator to the last element
+	int* begin(void) const;												// returns an iterator to the first element
+	int* end(void) const;												// returns an iterator to the last element
 
-																	// capacity methods
-	void resize(size_t n);									// resizes the array so that it contains n elements
-	void reserve(size_t n);									// requests the capacity to be at least enough to contain n elements
-	void shrink(void);										// requests the array to reduce its capacity to fit its size
-	bool empty(void) const;									// returns whether the array size is 0 or not
-	size_t capacity(void) const;									// returns the size of the currently allocated storage space
-	size_t size(void) const;									// returns the number of elements in the array
+																		// capacity methods
+	void resize(size_t n);												// resizes the array so that it contains n elements
+	void reserve(size_t n);												// requests the capacity to be at least enough to contain n elements
+	void shrink(void);													// requests the array to reduce its capacity to fit its size
+	bool empty(void) const;												// returns whether the array size is 0 or not
+	size_t capacity(void) const;										// returns the size of the currently allocated storage space
+	size_t size(void) const;											// returns the number of elements in the array
 	static size_t maxSize(void);										// returns the maximum number of elements that the array can hold
 
 																		// element access methods
